@@ -44,17 +44,14 @@
   height: 36px;
 }
 
-.header__menu-toggle {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .header__burger {
   display: none;
   width: 40px;
   height: 40px;
+  padding: 0;
+  border: none;
   background: url('../../images/svg/burger.svg') center / contain no-repeat;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -205,7 +202,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
   }
 
-  .header__menu-toggle:checked ~ .header__nav {
+  .header_open .header__nav {
     display: block;
   }
 

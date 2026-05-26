@@ -12,9 +12,8 @@
       <a class="header__logo-link" href="https://youtalk.ru/" target="_blank" rel="noopener noreferrer">
         <img class="header__logo-image" src="../images/svg/logo.svg" alt="YouTalk" width="51" height="36">
       </a>
-      <input type="checkbox" id="header-menu-toggle" class="header__menu-toggle visually-hidden">
-      <label for="header-menu-toggle" class="header__burger" aria-label="Открыть меню"></label>
-      <nav class="header__nav">
+      <button type="button" class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="header-nav"></button>
+      <nav class="header__nav" id="header-nav">
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="https://youtalk.ru/about/" target="_blank" rel="noopener noreferrer">О нас</a>
@@ -55,64 +54,6 @@
 
   <main class="page__main article-page">
     <div class="article-page__layout">
-      <aside class="aside article-page__aside" aria-label="Боковая панель">
-        <a class="aside__card" href="#">
-          <img class="aside__banner-image" src="../images/article/aside-1.png" alt="Загружаем свободные окошки">
-          <div class="aside__card-body">
-            <h2 class="aside__card-title">Загружаем<br>свободные окошки</h2>
-            <p class="aside__card-text">Все в порядке, сейчас мы перенаправим вас в сервис записи Qlick, через который удобно выбрать дату, время встречи и оплатить её</p>
-            <button class="aside__card-button" type="button">Подробнее</button>
-          </div>
-        </a>
-
-        <article class="aside__card">
-          <div class="aside__psychologist-header">
-            <div class="aside__psychologist-tags">
-              <span class="aside__psychologist-tag"><img class="aside__psychologist-tag-icon" src="../images/article/write.svg" alt="" width="16" height="16">Переписка</span>
-              <span class="aside__psychologist-tag"><img class="aside__psychologist-tag-icon" src="../images/article/video.svg" alt="" width="16" height="16">Видео</span>
-            </div>
-            <img class="aside__psychologist-photo" src="../images/article/lilly face.png" alt="Лилия — психолог">
-          </div>
-          <div class="aside__card-body">
-            <h2 class="aside__psychologist-name">Лилия</h2>
-            <p class="aside__psychologist-role">Психолог</p>
-            <p class="aside__psychologist-exp">Опыт 6 лет · 43 года</p>
-            <p class="aside__psychologist-list-title">С чем работает психолог</p>
-            <ul class="aside__psychologist-list">
-              <li class="aside__psychologist-list-item">Тревога, тревожности</li>
-              <li class="aside__psychologist-list-item">Подавленность</li>
-              <li class="aside__psychologist-list-item">Тревога и панические атаки</li>
-            </ul>
-            <button class="aside__card-button" type="button">Подробнее</button>
-          </div>
-        </article>
-
-        <a class="aside__card" href="#">
-          <img class="aside__gift-image" src="../images/article/aside-3.png" alt="Подарите заботу близкому">
-        </a>
-
-        <article class="aside__card">
-          <div class="aside__offer-header">
-            <p class="aside__offer-count">8</p>
-            <p class="aside__offer-label">Видео сессий</p>
-          </div>
-          <div class="aside__card-body">
-            <p class="aside__card-text">Проработать небольшие проблемы и продвинуться в решении сложных запросов</p>
-            <p class="aside__offer-price">18 500 ₽</p>
-            <button class="aside__card-button" type="button">Купить</button>
-          </div>
-        </article>
-
-        <nav class="aside__toc" aria-label="Содержание статьи">
-          <h2 class="aside__toc-title">Содержание</h2>
-          <ul class="aside__toc-list">
-            <li class="aside__toc-item"><a class="aside__toc-link" href="#section-mother">Как понять, что отношения с мамой были дисфункциональными и привели к травме?</a></li>
-            <li class="aside__toc-item"><a class="aside__toc-link" href="#section-trauma">Как понять, что вы страдаете от материнской травмы?</a></li>
-            <li class="aside__toc-item"><a class="aside__toc-link" href="#section-anxiety">Что еще можно делать с тревогой?</a></li>
-          </ul>
-        </nav>
-      </aside>
-
       <div class="article-page__content">
         <section class="breadcrumbs">
           <nav class="breadcrumbs__path" aria-label="Хлебные крошки">
@@ -252,6 +193,64 @@
           <img class="cta__bg-circle" src="../images/article/footer-bg.png" alt="" aria-hidden="true">
         </section>
       </div>
+
+      <aside class="aside article-page__aside" aria-label="Боковая панель">
+        <article class="aside__card">
+          <img class="aside__banner-image" src="../images/article/aside-1.png" alt="Загружаем свободные окошки">
+          <div class="aside__card-body">
+            <h2 class="aside__card-title">Загружаем<br>свободные окошки</h2>
+            <p class="aside__card-text">Все в порядке, сейчас мы перенаправим вас в сервис записи Qlick, через который удобно выбрать дату, время встречи и оплатить её</p>
+            <a class="aside__card-button" href="#">Подробнее</a>
+          </div>
+        </article>
+
+        <article class="aside__card">
+          <div class="aside__psychologist-header">
+            <div class="aside__psychologist-tags">
+              <span class="aside__psychologist-tag"><img class="aside__psychologist-tag-icon" src="../images/article/write.svg" alt="" width="16" height="16">Переписка</span>
+              <span class="aside__psychologist-tag"><img class="aside__psychologist-tag-icon" src="../images/article/video.svg" alt="" width="16" height="16">Видео</span>
+            </div>
+            <img class="aside__psychologist-photo" src="../images/article/lilly face.png" alt="Лилия — психолог">
+          </div>
+          <div class="aside__card-body">
+            <h2 class="aside__psychologist-name">Лилия</h2>
+            <p class="aside__psychologist-role">Психолог</p>
+            <p class="aside__psychologist-exp">Опыт 6 лет · 43 года</p>
+            <p class="aside__psychologist-list-title">С чем работает психолог</p>
+            <ul class="aside__psychologist-list">
+              <li class="aside__psychologist-list-item">Тревога, тревожности</li>
+              <li class="aside__psychologist-list-item">Подавленность</li>
+              <li class="aside__psychologist-list-item">Тревога и панические атаки</li>
+            </ul>
+            <a class="aside__card-button" href="#">Подробнее</a>
+          </div>
+        </article>
+
+        <a class="aside__card aside__card_type_link" href="#">
+          <img class="aside__gift-image" src="../images/article/aside-3.png" alt="Подарите заботу близкому">
+        </a>
+
+        <article class="aside__card">
+          <div class="aside__offer-header">
+            <p class="aside__offer-count">8</p>
+            <p class="aside__offer-label">Видео сессий</p>
+          </div>
+          <div class="aside__card-body">
+            <p class="aside__card-text">Проработать небольшие проблемы и продвинуться в решении сложных запросов</p>
+            <p class="aside__offer-price">18 500 ₽</p>
+            <button class="aside__card-button" type="button">Купить</button>
+          </div>
+        </article>
+
+        <nav class="aside__toc" aria-label="Содержание статьи">
+          <h2 class="aside__toc-title">Содержание</h2>
+          <ul class="aside__toc-list">
+            <li class="aside__toc-item"><a class="aside__toc-link" href="#section-mother">Как понять, что отношения с мамой были дисфункциональными и привели к травме?</a></li>
+            <li class="aside__toc-item"><a class="aside__toc-link" href="#section-trauma">Как понять, что вы страдаете от материнской травмы?</a></li>
+            <li class="aside__toc-item"><a class="aside__toc-link" href="#section-anxiety">Что еще можно делать с тревогой?</a></li>
+          </ul>
+        </nav>
+      </aside>
     </div>
   </main>
 
@@ -269,7 +268,7 @@
           <ul class="footer__navigation-list">
             <li><a class="footer__navigation-link" href="blog.html">Блог</a></li>
             <li><a class="footer__navigation-link" href="#">Вебинары</a></li>
-            <li><a class="footer__navigation-link" href="#">Подскаст</a></li>
+            <li><a class="footer__navigation-link" href="#">Подкаст</a></li>
             <li><a class="footer__navigation-link" href="#">Сертификат</a></li>
             <li><a class="footer__navigation-link" href="#">Контакты</a></li>
           </ul>
@@ -308,5 +307,6 @@
       </div>
     </div>
   </footer>
+  <script src="../blocks/header/header.js"></script>
 </body>
 </html>

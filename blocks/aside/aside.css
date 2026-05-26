@@ -11,6 +11,17 @@
   }
 }
 
+.aside__card_type_link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.aside__card_type_link:hover,
+.aside__card_type_link:focus-visible {
+  border-color: #16c8bb;
+}
+
 .aside__card {
   display: flex;
   flex-direction: column;
@@ -18,14 +29,25 @@
   border-radius: 16px;
   background-color: #ffffff;
   overflow: hidden;
+}
+
+.aside__card-button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e3f5f5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #03b2a5;
   text-decoration: none;
-  color: inherit;
   cursor: pointer;
 }
 
-.aside__card:hover,
-.aside__card:focus-visible {
-  border-color: #16c8bb;
+.aside__card-button:hover,
+.aside__card-button:focus-visible {
+  background-color: rgba(3, 178, 165, 0.3);
 }
 
 .aside__banner-image {
@@ -53,24 +75,6 @@
   font-size: 14px;
   line-height: 20px;
   color: #494949;
-}
-
-.aside__card-button {
-  align-self: flex-start;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #e3f5f5;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #03b2a5;
-  cursor: pointer;
-}
-
-.aside__card-button:hover,
-.aside__card-button:focus-visible {
-  background-color: rgba(3, 178, 165, 0.3);
 }
 
 .aside__psychologist-header {
@@ -242,7 +246,7 @@
 }
 
 @media (max-width: 991px) {
-  .aside {
-    order: -1;
+  .aside__toc {
+    display: none;
   }
 }
