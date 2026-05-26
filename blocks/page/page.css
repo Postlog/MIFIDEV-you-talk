@@ -1,0 +1,61 @@
+@import url('../../vendor/normalize.css');
+@import url('../../vendor/fonts.css');
+@import url('../header/header.css');
+@import url('../footer/footer.css');
+@import url('../breadcrumbs/breadcrumbs.css');
+@import url('../tags/tags.css');
+@import url('../cards/cards.css');
+@import url('../more-button/more-button.css');
+@import url('../article/article.css');
+@import url('../aside/aside.css');
+@import url('../cta/cta.css');
+
+.page {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.page__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.page_type_blog {
+  position: relative;
+}
+
+.page_type_blog::before {
+  content: '';
+  position: absolute;
+  top: 325px;
+  left: 0;
+  width: 100%;
+  height: 672px;
+  background: linear-gradient(180deg, #eff5fb 50%, #ffffff 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.page_type_article {
+  background: url('../../images/article/main.bg.png') no-repeat;
+  background-position: right 0 top 2480px;
+}
+
+.page__main {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .page_type_blog::before {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .page__container {
+    padding: 0;
+  }
+}

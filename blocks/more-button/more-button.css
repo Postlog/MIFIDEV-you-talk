@@ -1,0 +1,32 @@
+.more-button {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+
+.more-button__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 1px solid #16c8bb;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #16c8bb;
+  cursor: pointer;
+}
+
+.more-button__btn:hover,
+.more-button__btn:focus-visible {
+  background-color: rgba(22, 200, 187, 0.1);
+}
+
+.more-button__btn:active {
+  background-color: rgba(22, 200, 187, 0.2);
+}

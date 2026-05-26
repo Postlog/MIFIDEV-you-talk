@@ -1,0 +1,248 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 992px) {
+  .aside {
+    position: sticky;
+    top: 92px;
+  }
+}
+
+.aside__card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c1c5cd;
+  border-radius: 16px;
+  background-color: #ffffff;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.aside__card:hover,
+.aside__card:focus-visible {
+  border-color: #16c8bb;
+}
+
+.aside__banner-image {
+  width: 100%;
+}
+
+.aside__card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.aside__card-title {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.aside__card-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #494949;
+}
+
+.aside__card-button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e3f5f5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #03b2a5;
+  cursor: pointer;
+}
+
+.aside__card-button:hover,
+.aside__card-button:focus-visible {
+  background-color: rgba(3, 178, 165, 0.3);
+}
+
+.aside__psychologist-header {
+  position: relative;
+  padding: 16px;
+  background-color: #f3f7fa;
+}
+
+.aside__psychologist-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.aside__psychologist-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border: 1px solid #c1c5cd;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.aside__psychologist-tag-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.aside__psychologist-photo {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.aside__psychologist-name {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.aside__psychologist-role {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #494949;
+}
+
+.aside__psychologist-exp {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #868686;
+}
+
+.aside__psychologist-list-title {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.aside__psychologist-list {
+  margin: 0;
+  padding: 0;
+}
+
+.aside__psychologist-list-item {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.aside__psychologist-list-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #16c8bb;
+}
+
+.aside__gift-image {
+  width: 100%;
+}
+
+.aside__offer-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 16px 16px 0;
+}
+
+.aside__offer-count {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #333333;
+}
+
+.aside__offer-label {
+  margin: 0;
+  font-size: 14px;
+  color: #494949;
+}
+
+.aside__offer-price {
+  margin: 0;
+  padding: 0 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #333333;
+}
+
+.aside__toc {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .aside__toc {
+    display: block;
+    padding: 16px;
+    border: 1px solid #c1c5cd;
+    border-radius: 16px;
+    background-color: #ffffff;
+  }
+}
+
+.aside__toc-title {
+  margin: 0 0 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.aside__toc-list {
+  margin: 0;
+  padding: 0;
+}
+
+.aside__toc-item {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+.aside__toc-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: url('../../images/article/ul-circle.svg') no-repeat center / contain;
+}
+
+.aside__toc-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.aside__toc-link:hover,
+.aside__toc-link:focus-visible {
+  color: #16c8bb;
+}
+
+@media (max-width: 991px) {
+  .aside {
+    order: -1;
+  }
+}
