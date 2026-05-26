@@ -202,7 +202,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
   }
 
-  .header_open .header__nav {
+  .header--open .header__nav {
     display: block;
   }
 

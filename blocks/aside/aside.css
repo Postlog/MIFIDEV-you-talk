@@ -1,11 +1,15 @@
 .aside {
-  display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
+.article-page__aside {
+  display: none;
+}
+
 @media (min-width: 992px) {
-  .aside {
+  .article-page__aside {
+    display: flex;
     position: sticky;
     top: 92px;
   }
